@@ -79,7 +79,8 @@ run_foremost(){
 run_binwalk(){
 
     # the command uses -e to extract embedded files or data and -C to specify the output directory
-    if binwalk -e -C "$output_dir/binwalk_results" "$file"; then
+    # added --run-as=root because binwalk need it when i ran the command with sudo
+    if binwalk -e --run-as=root -C "$output_dir/binwalk_results" "$file"; then
         echo "binwalk completed successfully"
     else
         echo "binwalk failed"
