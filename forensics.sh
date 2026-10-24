@@ -1,6 +1,11 @@
 #!/bin/bash
 
-# /home/kali/projects/forensics/hello
+# Project: ANALYZER
+# Name: Shavit Bar
+# Student Code: s19
+# Class Code: TMagen773647
+# Lecturer's Name: Eliran Berkovich
+
 
 # Checking if the user has root privileges
 if [[ $(id -u) != 0 ]]; then
